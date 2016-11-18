@@ -1,0 +1,22 @@
+// cheatsheet
+// t_tag
+// a_attribute
+// e_tag_of_child
+// i_attribute_of_child
+
+rule Library2Index
+	transform s : Source!t_library
+	to t : Target!`t_index` {
+		"Library2Index".println();
+		Target.root = t;
+		t.a_totalpages = s.children.collect(b|b.i_pages).sum();
+	}
+	
+rule Book2Entry
+	transform s : Source!t_book
+	to t : Target!t_entry {
+		"Book2Entry".println();
+		t.a_title = s.a_title;
+		t.a_id = s.e_id.text;
+		s.parentNode.equivalent().appendChild(t);
+	}
