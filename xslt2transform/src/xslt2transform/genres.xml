@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="./genres.xsd">
+   <genre name="Computer" average-price="42.20">
+      <title>MSXML3: A Comprehensive Guide</title>
+      <title>Microsoft .NET: The Programming Bible</title>
+      <title>Visual Studio 7: A Comprehensive Guide</title>
+      <title>XML Developer's Guide</title>
+   </genre>
+   <genre name="Fantasy" average-price="5.95">
+      <title>Maeve Ascendant</title>
+      <title>Midnight Rain</title>
+      <title>Oberon's Legacy</title>
+      <title>The Sundered Grail</title>
+   </genre>
+   <genre name="Horror" average-price="4.95">
+      <title>Creepy Crawlies</title>
+   </genre>
+   <genre name="Romance" average-price="4.95">
+      <title>Lover Birds</title>
+      <title>Splish Splash</title>
+   </genre>
+   <genre name="Science Fiction" average-price="6.95">
+      <title>Paradox Lost</title>
+   </genre>
+</genres>
